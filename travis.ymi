@@ -1,0 +1,19 @@
+os:osx
+osx_image:xcode10.2
+
+language:bash
+
+git:
+depth:false
+
+before_cache:
+-brew cleanup
+
+cache:
+-directories:
+-$HOME/Library/Caches/Homebrew
+
+install:
+- whoami
+- echo "Start of Pipleline"
+- HOMEBREW-NO-AUTO=1
