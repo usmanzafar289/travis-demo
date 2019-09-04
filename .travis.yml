@@ -24,4 +24,4 @@ script:
   - ./hello.sh
 
 after_script:
-  - echo "End of pipeline"
+  - echo "End of test pipeline"
